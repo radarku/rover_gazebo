@@ -138,5 +138,23 @@
       </plugin>
     </sensor>
   </gazebo>
+  
+  <gazebo>
+    <plugin name="gps_controller" filename="libhector_gazebo_ros_gps.so">
+    <alwayson>true</alwayson>
+    <updateRate>1.0</updateRate>
+    <bodyName>base_link</bodyName>
+    <referenceLatitude>base_link</referenceLatitude>
+    <referenceLongitude>base_link</referenceLongitude>
+    <referenceAltitude>base_link</referenceAltitude>
+    <frameId>gps_link</frameId>
+    <topicName>/gps_navsat</topicName>
+    <velocitytopicName>/gps_navsat_vel</velocitytopicName>
+    <drift>5.0 5.0 5.0</drift>
+    <gaussianNoise>0.1 0.1 0.1</gaussianNoise>
+    <velocityDrift>0 0 0</velocityDrift>
+    <velocityGaussianNoise>0.1 0.1 0.1</velocityGaussianNoise>
+    </plugin>
+  </gazebo>
 
 </robot>
