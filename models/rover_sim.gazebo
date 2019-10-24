@@ -55,7 +55,7 @@
   <xacro:wheel prefix="rf" />
   <xacro:wheel prefix="rb" />
 
-  <gazebo>
+  <gazebo reference="odom">
     <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
       <updateRate>50.0</updateRate>
       <robotNamespace></robotNamespace>
@@ -70,7 +70,7 @@
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom_wheel</odometryTopic>
       <odometryFrame>odom</odometryFrame>
-      <broadcastTF>50</broadcastTF>
+      <broadcastTF>30</broadcastTF>
       <covariance_x>0.0001</covariance_x>
       <covariance_y>0.0001</covariance_y>
       <covariance_yaw>0.01</covariance_yaw>
