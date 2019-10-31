@@ -3,7 +3,8 @@ Panels:
     Help Height: 78
     Name: Displays
     Property Tree Widget:
-      Expanded: ~
+      Expanded:
+        - /Local Tree1/Status1
       Splitter Ratio: 0.6109510064125061
     Tree Height: 503
   - Class: rviz/Selection
@@ -248,7 +249,7 @@ Visualization Manager:
       Marker Topic: /exploration_polygon_marker
       Name: Marker
       Namespaces:
-        explore_points: true
+        {}
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -303,6 +304,22 @@ Visualization Manager:
       Radius: 0.10000000149011612
       Reference Frame: base_link
       Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /local_detector_shapes
+      Name: Local Tree
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /global_detector_shapes
+      Name: Global Tree
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -331,7 +348,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 9.209770202636719
+      Distance: 63.23465347290039
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -408,4 +425,4 @@ Window Geometry:
     collapsed: true
   Width: 881
   X: 146
-  Y: 84
+  Y: 27
