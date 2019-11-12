@@ -12,7 +12,7 @@
 
     <include>
       <uri>model://shelby_building_a</uri>
-      <pose>10 4 0 0 0 0</pose>
+      <pose>10 -4 0 0 0 0</pose>
     </include>
 
     <physics type='ode'>
