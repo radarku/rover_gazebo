@@ -26,6 +26,6 @@
     <param name="use_tf_static" value="false"/>
   </node>
   
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rover_gazebo)/rviz/gazebo.rviz" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rover_gazebo)/rviz/global.rviz" />
 
 </launch>
