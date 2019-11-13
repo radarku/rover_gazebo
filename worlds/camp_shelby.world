@@ -23,11 +23,25 @@
       <size>200 200</size>
     </include>
 
-    <road name="street">
-      <width>7.34</width>
+    <road name="street_1">
+      <width>5</width>
+      <point>-40 0 0.01</point>
+      <point>35 0 0.01</point>
+      <point>47.5 -25 0.01</point>
+    </road>
+
+    <road name="street_2">
+      <width>5</width>
       <point>-10 0 0.01</point>
-      <point>45 0 0.01</point>
-      <point>57.5 20 0.01</point>
+      <point>-2 -6.0 0.01</point>
+      <point> 2 -6.0 0.01</point>
+      <point>10 0 0.01</point>
+    </road>
+
+    <road name="street_3">
+      <width>5</width>
+      <point>35 0 0.01</point>
+      <point>47.5 25.0 0.01</point>
     </road>
 
     <include>
@@ -43,7 +57,7 @@
     <include>
       <uri>model://shelby_building_a</uri>
       <name>bldg_a_2</name>
-      <pose>60 0 0 0 0 -0.5707</pose>
+      <pose>32.5 -19 0 0 0 3.6</pose>
     </include>
 
     <physics type='ode'>

@@ -3,7 +3,8 @@ Panels:
     Help Height: 0
     Name: Displays
     Property Tree Widget:
-      Expanded: ~
+      Expanded:
+        - /BaseLink1
       Splitter Ratio: 0.5
     Tree Height: 329
   - Class: rviz/Selection
@@ -53,9 +54,9 @@ Visualization Manager:
       Value: true
     - Class: rviz/Axes
       Enabled: true
-      Length: 1
+      Length: 0.30000001192092896
       Name: BaseLink
-      Radius: 0.10000000149011612
+      Radius: 0.05000000074505806
       Reference Frame: base_link
       Value: true
     - Alpha: 1
@@ -264,7 +265,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: odom
+    Fixed Frame: base_link
     Frame Rate: 30
   Name: root
   Tools:
@@ -288,15 +289,15 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 17.522390365600586
+      Distance: 12.40470027923584
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.5448294878005981
-        Y: -2.4962849617004395
+        X: -1.8456342220306396
+        Y: -0.3217889666557312
         Z: 4.172325134277344e-6
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
@@ -367,4 +368,4 @@ Window Geometry:
     collapsed: true
   Width: 886
   X: 106
-  Y: 79
+  Y: 27
