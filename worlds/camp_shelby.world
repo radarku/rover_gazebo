@@ -32,16 +32,16 @@
 
     <road name="street_2">
       <width>5</width>
-      <point>-10 0 0.01</point>
-      <point>-2 -6.0 0.01</point>
-      <point> 2 -6.0 0.01</point>
-      <point>10 0 0.01</point>
+      <point>-5 0 0.01</point>
+      <point>-3 -6.0 0.01</point>
+      <point> 3 -6.0 0.01</point>
+      <point>5 0 0.01</point>
     </road>
 
     <road name="street_3">
       <width>5</width>
       <point>35 0 0.01</point>
-      <point>47.5 25.0 0.01</point>
+      <point>55 25.0 0.01</point>
     </road>
 
     <include>
