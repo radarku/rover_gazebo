@@ -23,7 +23,7 @@
   </node>
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
-    <param name="use_tf_static" value="false"/>
+    <param name="use_tf_static" value="true"/>
   </node>
   
   <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rover_gazebo)/rviz/global.rviz" /> -->

@@ -3,7 +3,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rover_sim">
 
   <xacro:arg name="laser_visual"  default="false"/>
-  <xacro:arg name="camera_visual" default="false"/>
+  <xacro:arg name="camera_visual" default="true"/>
   <xacro:arg name="imu_visual"    default="false"/>
 
   <!-- Defining skid-steer controller parameters. --> 
@@ -11,7 +11,7 @@
   <xacro:property name="wheel_mu2"        value="100.0"      />
   <xacro:property name="wheel_kp"         value="10000000.0" />
   <xacro:property name="wheel_kd"         value="1.0"        />
-  <xacro:property name="wheel_torque"     value="10.0"       />
+  <xacro:property name="wheel_torque"     value="5.0"       />
   <xacro:property name="wheel_separation" value="0.324"      />
   <xacro:property name="wheel_diameter"   value="0.156"      />   
 
@@ -57,7 +57,7 @@
 
   <gazebo>
     <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
-      <updateRate>10.0</updateRate>
+      <updateRate>30.0</updateRate>
       <robotNamespace></robotNamespace>
       <leftFrontJoint>lf_wheel_joint</leftFrontJoint>
       <rightFrontJoint>rf_wheel_joint</rightFrontJoint>
@@ -85,7 +85,7 @@
       <topicName>imu</topicName>
       <serviceName>imu_service</serviceName>
       <gaussianNoise>0.0</gaussianNoise>
-      <updateRate>200</updateRate>
+      <updateRate>50</updateRate>
       <imu>
         <noise>
           <type>gaussian</type>
@@ -129,7 +129,7 @@
         <noise>
           <type>gaussian</type>
           <mean>0.0</mean>
-          <stddev>0.01</stddev>
+          <stddev>0.05</stddev>
         </noise>
       </ray>
       <plugin name="gazebo_ros_lds_lfcd_controller" filename="libgazebo_ros_laser.so">
@@ -153,7 +153,7 @@
           <depth_camera></depth_camera>
           <clip>
               <near>0.03</near>
-              <far>1</far>
+              <far>100</far>
           </clip>
       </camera>
       <plugin name="camera_controller" filename="libgazebo_ros_openni_kinect.so">
