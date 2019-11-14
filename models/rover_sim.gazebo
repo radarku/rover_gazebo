@@ -11,7 +11,7 @@
   <xacro:property name="wheel_mu2"        value="100.0"      />
   <xacro:property name="wheel_kp"         value="10000000.0" />
   <xacro:property name="wheel_kd"         value="1.0"        />
-  <xacro:property name="wheel_torque"     value="5.0"       />
+  <xacro:property name="wheel_torque"     value="10.0"       />
   <xacro:property name="wheel_separation" value="0.324"      />
   <xacro:property name="wheel_diameter"   value="0.156"      />   
 
@@ -129,7 +129,7 @@
         <noise>
           <type>gaussian</type>
           <mean>0.0</mean>
-          <stddev>0.05</stddev>
+          <stddev>0.01</stddev>
         </noise>
       </ray>
       <plugin name="gazebo_ros_lds_lfcd_controller" filename="libgazebo_ros_laser.so">
