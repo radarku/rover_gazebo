@@ -57,7 +57,19 @@
     <include>
       <uri>model://shelby_building_a</uri>
       <name>bldg_a_2</name>
-      <pose>32.5 -19 0 0 0 3.6</pose>
+      <pose>35 -17 0 0 0 3.6</pose>
+    </include>
+
+    <include>
+      <uri>model://lamp_post</uri>
+      <name>lamp_post_1</name>
+      <pose>-8.0 3.8 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://lamp_post</uri>
+      <name>lamp_post_2</name>
+      <pose>8.0 -3.8 0 0 0 3.14159</pose>
     </include>
 
     <physics type='ode'>

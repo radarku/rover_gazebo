@@ -191,12 +191,13 @@
       <bodyName>base_link</bodyName>
       <referenceLatitude>31.136984</referenceLatitude>
       <referenceLongitude>-89.063407</referenceLongitude>
+      <referenceHeading>50</referenceHeading>
       <referenceAltitude>0.0</referenceAltitude>
       <frameId>gps_link</frameId>
       <topicName>gps_navsat</topicName>
       <velocitytopicName>gps_navsat_vel</velocitytopicName>
-      <drift>1.0 1.0 1.0</drift>
-      <gaussianNoise>0.1 0.1 0.1</gaussianNoise>
+      <drift>0.005 0.005 0.005</drift>
+      <gaussianNoise>0.01 0.01 0.01</gaussianNoise>
       <velocityDrift>0 0 0</velocityDrift>
       <velocityGaussianNoise>0.1 0.1 0.1</velocityGaussianNoise>
       </plugin>
