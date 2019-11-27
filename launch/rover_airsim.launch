@@ -1,0 +1,33 @@
+<launch>
+
+<!--
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find rover_gazebo)/worlds/camp_shelby.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/> 
+    <arg name="recording" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+    
+  <node name="spawn_model" pkg="gazebo_ros" type="spawn_model" 
+    args="-param robot_description -urdf -model rover_sim" 
+    output="screen" />
+-->
+
+  <param name="robot_description" command="$(find xacro)/xacro '$(find rover_description)/urdf/rover_sim.urdf.xacro' --inorder" />
+
+  <node name="fake_joint_calibration" pkg="rostopic" type="rostopic" args="pub /calibrated std_msgs/Bool true" />
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+    <!--rosparam param="source_list">["gazebo/link_states"]</rosparam-->
+  </node>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+    <param name="use_tf_static" value="true"/>
+  </node>
+  
+  <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rover_gazebo)/rviz/global.rviz" /> -->
+
+</launch>
