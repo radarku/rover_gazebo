@@ -55,6 +55,12 @@
     </include>
 
     <include>
+      <uri>model://Apriltag36_11_00000</uri>
+      <name>bldg_a_1_right_tag</name>
+      <pose>15 10 0 0 0 1.5707</pose>
+    </include>
+
+    <include>
       <uri>model://shelby_building_a</uri>
       <name>bldg_a_2</name>
       <pose>35 -17 0 0 0 3.6</pose>
