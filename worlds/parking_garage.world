@@ -25,23 +25,8 @@
 
     <road name="street_1">
       <width>5</width>
-      <point>-40 0 0.01</point>
-      <point>35 0 0.01</point>
-      <point>47.5 -25 0.01</point>
-    </road>
-
-    <road name="street_2">
-      <width>5</width>
-      <point>-5 0 0.01</point>
-      <point>-3 -6.0 0.01</point>
-      <point> 3 -6.0 0.01</point>
-      <point>5 0 0.01</point>
-    </road>
-
-    <road name="street_3">
-      <width>5</width>
-      <point>35 0 0.01</point>
-      <point>55 25.0 0.01</point>
+      <point>-10 0 0.01</point>
+      <point>50 0 0.01</point>
     </road>
 
     <include>
@@ -51,7 +36,7 @@
     <include>
       <uri>model://parking_garage</uri>
       <name>bldg_a_1</name>
-      <pose>25 10 0 0 0 -1.5707</pose>
+      <pose>35 12 0 0 0 -1.5707</pose>
     </include>
 
     <physics type='ode'>
