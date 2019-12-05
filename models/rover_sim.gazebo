@@ -3,7 +3,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rover_sim">
 
   <xacro:arg name="laser_visual"  default="false"/>
-  <xacro:arg name="camera_visual" default="true"/>
+  <xacro:arg name="camera_visual" default="false"/>
   <xacro:arg name="imu_visual"    default="false"/>
 
   <!-- Defining skid-steer controller parameters. --> 
@@ -122,7 +122,7 @@
           </horizontal>
         </scan>
         <range>
-          <min>0.120</min>
+          <min>0.45</min>
           <max>8.0</max>
           <resolution>0.015</resolution>
         </range>
