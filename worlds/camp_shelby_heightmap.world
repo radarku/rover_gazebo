@@ -65,7 +65,7 @@
     <include>
       <uri>model://jersey_barrier</uri>
       <name>jersey_barrier_2</name>
-      <pose>-16 4.5 0 0 0 0</pose>
+      <pose>-16 -3.75 0 0 0 0</pose>
     </include>
 
     <scene>
