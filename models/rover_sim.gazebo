@@ -183,7 +183,6 @@
     </sensor>
   </gazebo>
 
-  
   <gazebo>
     <plugin name="gps_controller" filename="libhector_gazebo_ros_gps.so">
       <alwayson>true</alwayson>

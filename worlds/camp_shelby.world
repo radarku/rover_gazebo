@@ -16,7 +16,7 @@
           <speed>4</speed>
         </clouds>
       </sky>
-      </scene>
+    </scene>
   
     <include>
       <uri>model://ground_plane</uri>
