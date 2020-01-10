@@ -9,13 +9,13 @@
           <geometry>
             <mesh><uri>file://shelby_simple.dae</uri></mesh>
           </geometry>
-          <pose>-10 46 87 0 0 -0.6</pose>
+          <pose>-10 46 87.95 0 0 -0.6</pose>
         </collision>
         <visual name="visual">
           <geometry>
             <mesh><uri>file://shelby_simple.dae</uri></mesh>
           </geometry>
-          <pose>-10 46 87 0 0 -0.6</pose>
+          <pose>-10 46 87.95 0 0 -0.6</pose>
         </visual>
       </link>
     </model>
@@ -23,7 +23,49 @@
     <include>
       <uri>model://shelby_building_a</uri>
       <name>bldg_a_1</name>
-      <pose>25.5 11.5 -1.2 0 0 1.5707</pose>
+      <pose>25.5 11.5 -0.25 0 0 1.5707</pose>
+    </include>
+
+    <include>
+      <uri>model://construction_cone</uri>
+      <name>cone_1</name>
+      <pose>36.89 3.17 -0.25 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://construction_cone</uri>
+      <name>cone_2</name>
+      <pose>36.89 -3. -0.25 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://lamp_post</uri>
+      <name>lamp_post_1</name>
+      <pose>-0.5 6.0 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://construction_barrel</uri>
+      <name>construction_barrel_1</name>
+      <pose>-22 -4.0 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://construction_barrel</uri>
+      <name>construction_barrel_2</name>
+      <pose>-20 4.0 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>jersey_barrier_1</name>
+      <pose>-16 4.5 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>jersey_barrier_2</name>
+      <pose>-16 4.5 0 0 0 0</pose>
     </include>
 
     <scene>
