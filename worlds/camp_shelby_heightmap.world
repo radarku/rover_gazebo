@@ -7,23 +7,35 @@
       <link name="terrain">
         <collision name="collision">
           <geometry>
-            <mesh><uri>file://shelby_simple.dae</uri></mesh>
+            <mesh><uri>file://shelby_reduced_nobuilding.dae</uri></mesh>
           </geometry>
           <pose>-10 46 87.95 0 0 -0.6</pose>
         </collision>
         <visual name="visual">
           <geometry>
-            <mesh><uri>file://shelby_simple.dae</uri></mesh>
+            <mesh><uri>file://shelby_reduced_nobuilding.dae</uri></mesh>
           </geometry>
           <pose>-10 46 87.95 0 0 -0.6</pose>
         </visual>
       </link>
     </model>
 
+    <gui>
+      <camera name="user_camera">
+        <pose>-21.0 0 8.0 0.000000 0.21 0</pose>
+      </camera>
+    </gui>
+
     <include>
       <uri>model://shelby_building_a</uri>
       <name>bldg_a_1</name>
       <pose>25.5 11.5 -0.25 0 0 1.5707</pose>
+    </include>
+
+    <include>
+      <uri>model://shelby_building_a</uri>
+      <name>bldg_a_2</name>
+      <pose>105 -16.75 -1.2 0.015 0 1.5707</pose>
     </include>
 
     <include>
