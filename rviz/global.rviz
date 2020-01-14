@@ -110,22 +110,22 @@ Visualization Manager:
       Class: rviz/Map
       Color Scheme: costmap
       Draw Behind: true
-      Enabled: true
+      Enabled: false
       Name: Local Costmap
       Topic: /MOVE_GLOBAL/local_costmap/costmap
       Unreliable: false
       Use Timestamp: false
-      Value: true
+      Value: false
     - Alpha: 0.699999988079071
       Class: rviz/Map
       Color Scheme: map
       Draw Behind: true
-      Enabled: true
+      Enabled: false
       Name: Global Costmap
       Topic: /MOVE_GLOBAL/global_costmap/costmap
       Unreliable: false
       Use Timestamp: false
-      Value: true
+      Value: false
     - Alpha: 1
       Buffer Length: 1
       Class: rviz/Path
@@ -187,9 +187,9 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 114; 159; 207
-      Max Intensity: 4.999996185302734
+      Max Intensity: 4.999992847442627
       Min Color: 114; 159; 207
-      Min Intensity: 0.48231005668640137
+      Min Intensity: 0.4823497235774994
       Name: Stereo
       Position Transformer: XYZ
       Queue Size: 10
@@ -281,4 +281,4 @@ Window Geometry:
     collapsed: true
   Width: 896
   X: 122
-  Y: 189
+  Y: 159
