@@ -187,9 +187,9 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 114; 159; 207
-      Max Intensity: 4.999992847442627
+      Max Intensity: 4.999796390533447
       Min Color: 114; 159; 207
-      Min Intensity: 0.4823497235774994
+      Min Intensity: 0.4560841917991638
       Name: Stereo
       Position Transformer: XYZ
       Queue Size: 10
@@ -242,25 +242,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 8.955201148986816
+      Distance: 6.014840126037598
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -2.4903745651245117
-        Y: 0.3652160167694092
-        Z: 2.2649765014648438e-6
+        X: 0.20175743103027344
+        Y: -0.03248855471611023
+        Z: 8.344650268554688e-7
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6902018785476685
+      Pitch: 0.3852021396160126
       Target Frame: <Fixed Frame>
       Value: ThirdPersonFollower (rviz)
-      Yaw: 3.381591796875
+      Yaw: 3.151590347290039
     Saved: ~
 Window Geometry:
   Displays:
@@ -281,4 +281,4 @@ Window Geometry:
     collapsed: true
   Width: 896
   X: 122
-  Y: 159
+  Y: 129
