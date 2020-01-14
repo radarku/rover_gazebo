@@ -161,7 +161,7 @@
         <alwaysOn>true</alwaysOn>
         <updateRate>6.0</updateRate>
         <cameraName>realsense</cameraName>
-        <frameName>camera_color_optical_frame</frameName>
+        <frameName>camera_optical_link</frameName>
         <imageTopicName>/camera/color/image_raw</imageTopicName>
         <depthImageTopicName>/camera/depth/image_raw </depthImageTopicName>
         <pointCloudTopicName>/camera/depth/color/points</pointCloudTopicName>
