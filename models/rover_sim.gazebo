@@ -188,12 +188,12 @@
       <!-- <alwayson>true</alwayson> -->
       <updateRate>1.0</updateRate>
       <bodyName>gps_link</bodyName>
-      <referenceLatitude>31.136984</referenceLatitude>
-      <referenceLongitude>-89.063407</referenceLongitude>
+      <referenceLatitude>31.1369</referenceLatitude>
+      <referenceLongitude>-89.0635</referenceLongitude>
       <referenceHeading>50</referenceHeading>
       <referenceAltitude>0.0</referenceAltitude>
       <frameId>gps_link</frameId>
-      <topicName>gps_navsat</topicName>
+      <topicName>gps_navsat_raw</topicName>
       <velocitytopicName>gps_navsat_vel</velocitytopicName>
       <drift>2 2 2</drift>
       <gaussianNoise>0.5 0.5 0.5</gaussianNoise>
