@@ -9,13 +9,13 @@
           <geometry>
             <mesh><uri>file://shelby_reduced_nobuilding.dae</uri></mesh>
           </geometry>
-          <pose>-10 46 87.95 0 0 -0.6</pose>
+          <pose>-9.5 45.5 87.925 0 0 -0.6</pose>
         </collision>
         <visual name="visual">
           <geometry>
             <mesh><uri>file://shelby_reduced_nobuilding.dae</uri></mesh>
           </geometry>
-          <pose>-10 46 87.95 0 0 -0.6</pose>
+          <pose>-9.5 45.5 87.925 0 0 -0.6</pose>
         </visual>
       </link>
     </model>
