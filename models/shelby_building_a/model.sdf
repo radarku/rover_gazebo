@@ -2325,5 +2325,22 @@
       <pose frame=''>0.140465 -8.61274 0 0 -0 0</pose>
     </link>
     <static>1</static>
+
+    <include>
+      <uri>model://Apriltag36_11_00004</uri>
+      <name>bldg_a_1_right_tag</name>
+      <pose>-3.2 7.25 0.5 0 1.5707 0</pose>
+      <scale>0.25 0.25 0.25</scale>
+    </include>
+
+    <include>
+      <uri>model://Apriltag36_11_00003</uri>
+      <name>bldg_a_1_left_tag</name>
+      <pose>-3.2 8.45 0.5 0 1.5707 0.45</pose>
+      <scale>0.25 0.25 0.25</scale>
+    </include>
+
+
+
   </model>
 </sdf>
