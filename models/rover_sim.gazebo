@@ -70,7 +70,7 @@
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom_wheel</odometryTopic>
       <odometryFrame>odom</odometryFrame>
-      <broadcastTF>30</broadcastTF>
+      <broadcastTF>0</broadcastTF>
       <covariance_x>0.0001</covariance_x>
       <covariance_y>0.0001</covariance_y>
       <covariance_yaw>0.01</covariance_yaw>
