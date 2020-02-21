@@ -193,7 +193,7 @@
       <referenceHeading>50</referenceHeading>
       <referenceAltitude>0.0</referenceAltitude>
       <frameId>gps_link</frameId>
-      <topicName>gps_navsat_raw</topicName>
+      <topicName>gps_navsat</topicName>
       <velocitytopicName>gps_navsat_vel</velocitytopicName>
       <drift>0 0 0</drift>
       <gaussianNoise>2.0 2.0 2.0</gaussianNoise>
