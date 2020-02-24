@@ -196,9 +196,9 @@
       <topicName>gps_navsat</topicName>
       <velocitytopicName>gps_navsat_vel</velocitytopicName>
       <drift>0 0 0</drift>
-      <gaussianNoise>2.0 2.0 2.0</gaussianNoise>
+      <gaussianNoise>0.25 0.25 0.25</gaussianNoise>
       <velocityDrift>0 0 0</velocityDrift>
-      <velocityGaussianNoise>0.1 0.1 0.1</velocityGaussianNoise>
+      <velocityGaussianNoise>0.05 0.05 0.05</velocityGaussianNoise>
       </plugin>
   </gazebo>
 
