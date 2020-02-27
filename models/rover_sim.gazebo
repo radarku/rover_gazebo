@@ -142,12 +142,13 @@
   <gazebo reference="camera_link">
     <sensor type="depth" name="realsense">
       <always_on>true</always_on>
+      <updateRate>3.0</updateRate>
       <visualize>$(arg camera_visual)</visualize>
       <camera>
           <horizontal_fov>1.3439</horizontal_fov>
           <image>
-              <width>1280</width>
-              <height>720</height>
+              <width>640</width>
+              <height>480</height>
               <format>R8G8B8</format>
           </image>
           <depth_camera></depth_camera>
@@ -159,15 +160,16 @@
       <plugin name="camera_controller" filename="libgazebo_ros_openni_kinect.so">
         <baseline>0.2</baseline>
         <alwaysOn>true</alwaysOn>
-        <updateRate>6.0</updateRate>
+        <updateRate>0.0</updateRate>
         <cameraName>realsense</cameraName>
-        <frameName>camera_optical_link</frameName>
+        <frameName>camera_depth_optical_frame</frameName>
         <imageTopicName>/camera/color/image_raw</imageTopicName>
         <depthImageTopicName>/camera/depth/image_raw </depthImageTopicName>
         <pointCloudTopicName>/camera/depth/color/points</pointCloudTopicName>
         <cameraInfoTopicName>/camera/color/camera_info</cameraInfoTopicName>
         <depthImageCameraInfoTopicName>/camera/depth/camera_info</depthImageCameraInfoTopicName>
         <pointCloudCutoff>0.1</pointCloudCutoff>
+        <pointCloudCutoffMax>2.5</pointCloudCutoffMax>
             <hackBaseline>0.07</hackBaseline>
             <distortionK1>0.0</distortionK1>
             <distortionK2>0.0</distortionK2>
