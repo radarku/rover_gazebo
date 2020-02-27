@@ -3,7 +3,8 @@ Panels:
     Help Height: 0
     Name: Displays
     Property Tree Widget:
-      Expanded: ~
+      Expanded:
+        - /Map1/Status1
       Splitter Ratio: 0.5
     Tree Height: 490
   - Class: rviz/Selection
@@ -214,11 +215,37 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
+    - Alpha: 1
+      Class: rviz/Polygon
+      Color: 25; 255; 0
+      Enabled: true
+      Name: Polygon
+      Topic: /exploration_server_node/explore_costmap/polygon_layer/current_polygon
+      Unreliable: false
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /exploration_polygon_marker
+      Name: Marker
+      Namespaces:
+        explore_points: true
+      Queue Size: 100
+      Value: true
+    - Alpha: 0.699999988079071
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: false
+      Name: Map
+      Topic: /exploration_server_node/explore_costmap/costmap
+      Unreliable: false
+      Use Timestamp: false
+      Value: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: map_inertial
+    Fixed Frame: map
     Frame Rate: 30
   Name: root
   Tools:
@@ -237,30 +264,30 @@ Visualization Manager:
       Topic: /move_base_simple/goal
     - Class: rviz/PublishPoint
       Single click: true
-      Topic: /exploration_polygon_marker
+      Topic: /clicked_point
   Value: true
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 5.135854721069336
+      Distance: 2.013953447341919
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.4000000059604645
-        Y: 0
-        Z: -5.220200094413485e-8
-      Focal Shape Fixed Size: true
-      Focal Shape Size: 0.009999999776482582
+        X: 1.005088210105896
+        Y: -0.10117040574550629
+        Z: 0
+      Focal Shape Fixed Size: false
+      Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6000000238418579
+      Pitch: -0.009999829344451427
       Target Frame: base_link
       Value: ThirdPersonFollower (rviz)
-      Yaw: 3.141590118408203
+      Yaw: 3.1015899181365967
     Saved: ~
 Window Geometry:
   Displays:
@@ -280,5 +307,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1740
-  X: 92
-  Y: 27
+  X: 138
+  Y: 100
