@@ -2,6 +2,19 @@
 <sdf version="1.5">
   <world name="camp_shelby_heightmap">
 
+    <!-- <light type="directional" name="ambient_light">
+      <pose>0 0 1 0 0 0</pose>
+      <diffuse>255 255 255 25</diffuse>
+      <specular>25 25 25 25</specular>
+      <attenuation>
+        <range>20</range>
+        <linear>0.2</linear>
+        <constant>0.8</constant>
+        <quadratic>0.01</quadratic>
+      </attenuation>
+      <cast_shadows>true</cast_shadows>
+    </light> -->
+
     <model name="camp_shelby">
       <static>true</static>
       <link name="terrain">
